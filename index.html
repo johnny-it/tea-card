@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Адаптивная карточка товара «Ананасовый улун»"
+    >
+    <title>Ананасовый улун — карточка товара</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body class="page">
+    <main class="page__main">
+      <article class="product-card" aria-labelledby="product-title">
+        <!-- Изображение товара -->
+        <figure class="product-card__media">
+          <img
+            class="product-card__image"
+            src="images/ananasovij-ulun.jpg"
+            alt="Смесь бирюзового чая с разноцветными кусочками цукатов"
+            width="800"
+            height="800"
+          >
+        </figure>
+
+        <!-- Основная информация и покупка -->
+        <section class="product-card__content" aria-label="Информация о товаре">
+          <header class="product-card__header">
+            <p class="product-card__category">Ароматизированный улун</p>
+            <h1 class="product-card__title" id="product-title">Ананасовый улун</h1>
+            <p class="product-card__article">
+              Арт. <span class="js-product-article" data-product-article>01306</span>
+            </p>
+          </header>
+
+          <div class="product-card__purchase">
+            <!-- Выбор фасовки -->
+            <div
+              class="product-card__packages"
+              role="group"
+              aria-label="Выберите фасовку"
+            >
+              <button
+                class="product-card__package product-card__package--active js-package-weight"
+                type="button"
+                data-package-weight="100"
+                aria-pressed="true"
+              >
+                100 г
+              </button>
+              <button
+                class="product-card__package js-package-weight"
+                type="button"
+                data-package-weight="500"
+                aria-pressed="false"
+              >
+                500 г
+              </button>
+              <button
+                class="product-card__package js-package-weight"
+                type="button"
+                data-package-weight="1000"
+                aria-pressed="false"
+              >
+                1000 г
+              </button>
+              <button
+                class="product-card__package js-package-weight"
+                type="button"
+                data-package-weight="5000"
+                aria-pressed="false"
+              >
+                5000 г
+              </button>
+            </div>
+
+            <!-- Цена и добавление в корзину -->
+            <div class="product-card__price" aria-live="polite" aria-atomic="true">
+              <s class="product-card__old-price js-product-old-price" data-product-old-price>349,20 ₽</s>
+              <strong class="product-card__current-price js-product-price" data-product-price>326,40 ₽</strong>
+            </div>
+
+            <button class="product-card__cart-button" type="button">
+              <svg
+                class="product-card__cart-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 4h2l2.3 10.05a2 2 0 0 0 1.95 1.55h7.93a2 2 0 0 0 1.93-1.48L21 7H6.05"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="9.5" cy="19" r="1.25" fill="currentColor" />
+                <circle cx="17.5" cy="19" r="1.25" fill="currentColor" />
+              </svg>
+              <span>В корзину</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Краткое описание товара -->
+        <section class="product-card__description" aria-labelledby="description-title">
+          <h2 class="visually-hidden" id="description-title">Описание товара</h2>
+          <p>
+            Состав: китайский бирюзовый чай, цукаты, натуральные ароматические
+            масла. Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде —
+            красивый крупный лист изумрудного цвета, скруткой листа напоминающий
+            Те Гуань Инь. В прогретой посуде аромат свежей, весенней зелени и
+            спелого ананаса.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
