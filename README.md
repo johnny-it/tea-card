@@ -40,3 +40,5 @@ tea-card/
 ├── styles.css
 └── README.md
 ```
+## Скриншоты
+<img width="3840" height="2256" alt="FireShot Capture 027 - Ананасовый улун — карточка товара - " src="https://github.com/user-attachments/assets/20b8bac4-d810-413d-ba56-da3e085cbf59" />
